@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExpenseTrackerApp.Views.ExpensePage"
+             Title="Expense Page">
+    <ContentPage.Content>
+        <Grid Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackLayout>
+                <Label Text="Expense Entry" FontSize="Title" TextColor="Gray"></Label>
+
+                <Entry Text="{Binding StoreName}" Placeholder="Enter Store Name" />
+                <Entry Text="{Binding ExpenseCategory}" Placeholder="Enter Expense Category" />
+                <Entry Text="{Binding ExpenseName}" Placeholder="Enter Expense Name" />
+                <Entry Text="{Binding TotalPrice}" Placeholder="Enter Total Price" />
+
+                <Button WidthRequest="200" Text="Add New Expenses" Command="{Binding RegisterExpenseInfo}" />
+            </StackLayout>
+
+            <ListView Grid.Row="1" ItemsSource="{Binding Expense}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding StoreName}"></Label>
+                                <Label Text="{Binding ExpenseCategory}"></Label>
+                                <Label Text="{Binding ExpenseName}"></Label>
+                                <Label Text="{Binding TotalPrice}"></Label>
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </Grid>
+
+
+    </ContentPage.Content>
+</ContentPage>

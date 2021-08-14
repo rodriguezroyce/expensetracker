@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExpenseTrackerApp.Views.ExpenseListPage"
+             Title="Expense Page">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add Record" Clicked="TxtAdd"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout Spacing="3" Padding="15">
+            <ListView x:Name="lstExpense"
+                      ItemsSource="{Binding GetExpenseList}"
+                      ItemTapped="OnItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Grid Padding="2" RowSpacing="1" ColumnSpacing="2">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="*" />
+
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="*" />
+
+                                    </Grid.ColumnDefinitions>
+                                    <Label Text="{Binding ExpenseName}" Grid.Row="0" Grid.Column="0" FontSize="16"/>
+                                    <Label Text="{Binding TotalPrice}" Grid.Row="0" Grid.Column="1" FontSize="16"/>
+                                    <Label Text="{Binding Today}" Grid.Row="1" FontSize="11"/>
+                                </Grid>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

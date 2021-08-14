@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "FFQsLXr7RTFgrtAIAg3qeRr1X0Zv2IIhNpbwTZjQqBjzeId0iDpn7CvXQgDaLBSqj/0Hbj6D3FMjwu3to9eVoQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rrocy\\source\\repos\\ExpenseTrackerApp\\ExpenseTrackerApp\\ExpenseTrackerApp.iOS\\ExpenseTrackerApp.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rrocy\\.nuget\\packages\\firebasedatabase.net\\4.0.6\\firebasedatabase.net.4.0.6.nupkg.sha512",
+    "C:\\Users\\rrocy\\.nuget\\packages\\litedb\\4.1.4\\litedb.4.1.4.nupkg.sha512",
+    "C:\\Users\\rrocy\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\rrocy\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\rrocy\\.nuget\\packages\\system.reactive\\4.0.0\\system.reactive.4.0.0.nupkg.sha512",
+    "C:\\Users\\rrocy\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
+    "C:\\Users\\rrocy\\.nuget\\packages\\system.reflection.typeextensions\\4.3.0\\system.reflection.typeextensions.4.3.0.nupkg.sha512",
+    "C:\\Users\\rrocy\\.nuget\\packages\\system.runtime.interopservices.windowsruntime\\4.3.0\\system.runtime.interopservices.windowsruntime.4.3.0.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}

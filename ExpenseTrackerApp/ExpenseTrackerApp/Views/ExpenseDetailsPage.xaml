@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExpenseTrackerApp.Views.ExpenseDetailsPage"
+             Title="Expense Details Page">
+    <ContentPage.Content>
+        <StackLayout Padding="15,10,15,10">
+            <Grid ColumnDefinitions="100,*">
+                <Label Grid.Column="0" Text="Store Name: " VerticalTextAlignment="Center" FontSize="16" />
+                <Entry Grid.Column="1" x:Name="StoreName" Placeholder="Enter Value" Text="{Binding StoreName}" />
+            </Grid>
+            <Grid ColumnDefinitions="100,*">
+                <Label Grid.Column="0" Text="Expense Category: " VerticalTextAlignment="Center" FontSize="16" />
+                <Entry Grid.Column="1" x:Name="ExpenseCategory" Placeholder="Enter Value" Text="{Binding ExpenseCategory}" />
+            </Grid>
+            <Grid ColumnDefinitions="100,*">
+                <Label Grid.Column="0" Text="Expense Name: " VerticalTextAlignment="Center" FontSize="16" />
+                <Entry Grid.Column="1" x:Name="ExpenseName" Placeholder="Enter Value" Text="{Binding ExpenseName}"/>
+            </Grid>
+            <Grid ColumnDefinitions="100,*">
+                <Label Grid.Column="0" Text="Total Price: " VerticalTextAlignment="Center" FontSize="16" />
+                <Entry Grid.Column="1" x:Name="TotalPrice" Placeholder="Enter Value" Text="{Binding TotalPrice}"/>
+            </Grid>
+
+
+            <Button Text="Update" Clicked="BtnUpdate" HorizontalOptions="FillAndExpand" />
+            <Button Text="Delete" Clicked="BtnDelete" HorizontalOptions="FillAndExpand" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
